@@ -1,1 +1,331 @@
-<h1>Hi Miracle</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miracle Clement - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #1A1F2C 0%, #221F26 100%);
+        color: #ffffff;
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 4rem 1rem;
+      }
+
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        margin-bottom: 5rem;
+        animation: fadeIn 1s ease-out;
+      }
+
+      .profile-container {
+        margin-bottom: 2rem;
+      }
+
+      .profile-image {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 1.5rem;
+        border: 3px solid rgba(100, 255, 218, 0.1);
+      }
+
+      .profile-image img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        color: #8b8b8b;
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+      }
+
+      .button-group {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: rgba(100, 255, 218, 0.1);
+        border: 1px solid #64ffda;
+        border-radius: 0.5rem;
+        color: #64ffda;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .button:hover {
+        background: rgba(100, 255, 218, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* Glass Card */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        animation: slideUp 0.8s ease-out;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #ffffff;
+      }
+
+      .content {
+        color: #d1d5db;
+      }
+
+      .content p {
+        margin-bottom: 1rem;
+      }
+
+      /* Portfolio Links */
+      .portfolio-link {
+        display: block;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 0.5rem;
+        color: #64ffda;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .portfolio-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateX(10px);
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Pages */
+      .page {
+        display: none;
+      }
+
+      .page.active {
+        display: block;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 2rem 1rem;
+        }
+
+        .profile-image {
+          width: 9rem;
+          height: 9rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .glass-card {
+          padding: 1.5rem;
+        }
+
+        .button-group {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .button {
+          width: 100%;
+          max-width: 300px;
+          text-align: center;
+        }
+      }
+    </style>
+  
+<style>
+	#lovable-badge {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		width: 141px;
+		padding: 5px 13px;	
+		background-color: #000;
+		color: #fff;
+		font-size: 12px;
+		border-radius: 5px;
+		font-family: sans-serif;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		z-index: 1000000;
+	}
+</style>
+<meta name="twitter:image" content= /></head>
+  <body>
+    <!-- Home Page -->
+    <div class="page active" id="home">
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="profile-container">
+            <div class="profile-image">
+              <img src="/img/WhatsApp Image 2025-04-12 at 10.36.25 PM.jpeg" alt="Miracle Clement" />
+            </div>
+            <h1>Miracle Clement</h1>
+            <p class="subtitle"> Cloud engineer, project manager, program specialist.</p>
+            <div class="button-group">
+              <a href="https://drive.google.com/file/d/1pq8IUdgTy3PpF754i9srL-ui-XalPYGx/view?usp=sharing" target="_blank" class="button">
+                View CV →
+              </a>
+              <a href="#" onclick="showPage('elevator-pitch'); return false;" class="button">
+                Elevator Pitch →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="glass-card">
+          <h2>About Me</h2>
+          <div class="content">
+            <p>
+                I’m Miracle Uyai Clement, an aspiring Cloud Engineer who is passionate about technology and how it can solve real world problems. I enjoy working with AWS, and other cloud technologies to build solutions that help businesses work more efficiently.
+            </p>
+            <p>
+                One of my strengths is adapting to new challenges. Technology is always changing, and I make it a priority to learn new skills, stay updated, and improve my problem-solving abilities. I love breaking down complex problems, finding the best solutions, and making things simpler and more efficient.
+            </p>
+            <p>
+                I thrive on collaboration, sharing knowledge, and gaining new insights from diverse perspectives. My ultimate goal is to grow as a cloud expert, support businesses in optimizing their cloud systems, and make a meaningful impact in the tech industry.
+            </p>
+            
+            <h3>What I Bring to the Table:</h3>
+            <ul>
+                <li><strong>Problem-Solving Mindset</strong> – Passionate about breaking down challenges and crafting smart, efficient solutions.</li>
+                <li><strong>Cloud Computing Enthusiast</strong> – Continuously developing expertise in AWS to build scalable and reliable cloud solutions.</li>
+                <li><strong>Continuous Learner</strong> – Dedicated to staying updated with emerging technologies and industry trends.</li>
+                <li><strong>Technical & Analytical Thinker</strong> – Skilled at analyzing complex systems and enhancing their performance.</li>
+                <li><strong>Strong Communication & Leadership</strong> – Committed to teamwork, knowledge sharing, and inspiring others to grow.</li>
+            </ul>
+            
+          </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="glass-card">
+          <h2>Portfolio</h2>
+          <div class="content">
+            <a href="https://www.canva.com/design/DAGgwiC0k9M/vKnl_Lej3v5Opz_DL8bw1Q/edit?utm_content=DAGgwiC0k9M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="portfolio-link">
+            Project →
+            </a>
+            <a href="https://www.canva.com/design/DAGhP7of2Hg/VEmKuGBRjbKgA1R5F8vaxQ/view?utm_content=DAGhP7of2Hg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5528a7eccf" target="_blank" class="portfolio-link">
+         Project →
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Elevator Pitch Page -->
+    <div class="page" id="elevator-pitch">
+      <div class="container">
+        <div class="glass-card">
+          <h2>Elevator Pitch</h2>
+          <div class="content">
+            <p>My name is Miracle Uyai Clement. I am passionate about cloud computing technology and eager to grow in the tech field. With a strong willingness to learn and adapt, I am actively building my expertise in cloud infrastructure, automation, and security.</p>
+
+            <p>My top skills include problem-solving, adaptability, and strategic thinking, which allow me to approach cloud solutions with a fresh perspective. What sets me apart is my commitment to continuous learning and my ability to quickly grasp and apply new technologies to real-world challenges.</p>
+            
+            <p>I am focused on helping organizations transition to efficient, scalable cloud solutions while continuously improving my technical skills. By working with me, you gain a dedicated professional who is not only skilled but also highly motivated to grow and contribute to your team's success.</p>
+            
+            <p>I am looking for opportunities to collaborate with cloud-focused teams, gain hands-on experience, and contribute to impactful projects. If you’re open to mentoring or working with a fast learner who’s passionate about cloud computing, let’s connect. Together, we can drive innovation and build smarter cloud solutions.</p>
+            
+          </div>
+          <div class="button-group" style="justify-content: flex-start; margin-top: 2rem;">
+            <a href="https://youtube.com/shorts/YkA6egkotgM?si=yYJwj1co5DXD0PZF" target="_blank" class="button">
+              Watch Elevator Pitch Video →
+            </a>
+            <a href="#" onclick="showPage('home'); return false;" class="button">
+              ← Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(page => {
+          page.classList.remove('active');
+        });
+        // Show selected page
+        document.getElementById(pageId).classList.add('active');
+        // Scroll to top
+        window.scrollTo(0, 0);
+      }
+
+      // Handle direct links with hash
+      if (window.location.hash) {
+        const pageId = window.location.hash.substring(1);
+        showPage(pageId);
+      }
+    </script>
+  
+
+<script>
+	
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"92f5ef354af9db18","version":"2025.3.0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"dc79be98a7d9454985898a9490bd0402","b":1}' crossorigin="anonymous"></script>
+</body>
+
+
+</html>
